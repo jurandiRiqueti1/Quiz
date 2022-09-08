@@ -1,11 +1,16 @@
-let questoes = [1,2,3,4,5,6,7,8,9,10]
+import teste from './json/teste.json' assert {type: "json"}
 
-function questaoAleatoria(questoes) {
-    let pergunta = Math.floor(Math.random() * questoes.length)
-    questoes.splice(pergunta, 1)
+const questoes = ['q1','q2','q3','q4']
+
+function questaoAleatoria(array) {
+
+    const index = Math.floor(Math.random() * array.length)
+
+    const questao = array.slice(index, index+1)[0]
+
     return {
-        questao: pergunta,
-        array: questoes
+        questao: questao,
+        array: array
     }
 }
 
