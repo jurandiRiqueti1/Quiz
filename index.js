@@ -1,4 +1,4 @@
-import teste from './json/teste.json' assert {type: "json"}
+import teste from './json/questoes.json' assert {type: "json"}
 
 function questaoAleatoria(array) {
 
@@ -11,3 +11,5 @@ function questaoAleatoria(array) {
         array: array
     }
 }
+
+console.log(questaoAleatoria(teste))
