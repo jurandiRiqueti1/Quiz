@@ -11,5 +11,3 @@ function questaoAleatoria(array) {
         array: array
     }
 }
-
-console.log(questaoAleatoria(teste))
