@@ -14,4 +14,6 @@ function questaoAleatoria(array) {
     }
 }
 
+console.log(teste)
+
 console.log(questaoAleatoria(questoes))
