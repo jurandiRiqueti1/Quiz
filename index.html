@@ -1,31 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <!-- conteúdo -->
-    <div class="espaco-g"></div>
-    <div class="container">
-        <div class="row text-center justify-content-center">
-            <div class="col-md-8">
-                <h1>Quiz de Direito</h1>
-                <h3>Teste seus conhecimentos, aqui!</h3>
+    <div id="inicio" class="">
+        <div class="espaco-g"></div>
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                    <h1>Quiz de Direito</h1>
+                    <h3>Teste seus conhecimentos, aqui!</h3>
+                </div>
+            </div>
+            <div class="espaco"></div>
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                    <form id="form-inicio">
+                        <button type="submit" class="btn btn-primary btn-lg" href="">
+                            <h1>Iniciar</h1>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="espaco"></div>
-        <div class="row text-center justify-content-center">
-            <div class="col-md-8">
-                <a class="btn btn-primary btn-lg" href="pages/questoes.html"><h1>Iniciar</h1></a>
-            </div>
+    </div>
+
+    <!-- conteúdo -->
+    <div id="questoes" class="d-none">
+        <div class="espaco-p"></div>
+        <div class="container">
+            <form id="formulario">
+
+                <!-- corpo da questão -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card bg-light p-4">
+                            <h2 id="questao-numero">Questao 1</h2>
+                            <hr>
+                            <p id="questao-corpo">
+
+                            </p>
+                            <span id="questao-ref" class="d-none">
+                                <i class="text-muted">
+                                    Referência:
+                                    <a id="link-ref" href="" target="_blank"></a>
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="espaco-questao"></div>
+
+                <!-- alternativas da questao -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div id="div-a" class="col-md-6 d-none">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input value="a" class="form-check-input" type="radio" name="opcoes"
+                                            id="letra-a">
+                                        <label class="form-check-label" for="letra-a">
+                                            <span><strong id="letra-a-v">Letra A:</strong></span>
+                                            <p id="questao-alternativa-letra-a" class="mb-0">
+
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div id="div-b" class="col-md-6 d-none">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input value="b" class="form-check-input" type="radio" name="opcoes"
+                                            id="letra-b">
+                                        <label class="form-check-label" for="letra-b">
+                                            <span><strong id="letra-b-f">Letra B:</strong></span>
+                                            <p id="questao-alternativa-letra-b" class="mb-0">
+
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div id="div-c" class="col-md-6 d-none">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input value="c" class="form-check-input" type="radio" name="opcoes"
+                                            id="letra-c">
+                                        <label class="form-check-label" for="letra-c">
+                                            <span><strong>Letra C:</strong></span>
+                                            <p id="questao-alternativa-letra-c" class="mb-0">
+
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div id="div-d" class="col-md-6 d-none">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input value="d" class="form-check-input" type="radio" name="opcoes"
+                                            id="letra-d">
+                                        <label class="form-check-label" for="letra-d">
+                                            <span><strong>Letra D:</strong></span>
+                                            <p id="questao-alternativa-letra-d" class="mb-0">
+
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div id="div-e" class="col-md-6 d-none">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input value="e" class="form-check-input" type="radio" name="opcoes"
+                                            id="letra-e">
+                                        <label class="form-check-label" for="letra-e">
+                                            <span><strong>Letra E:</strong></span>
+                                            <p id="questao-alternativa-letra-e" class="mb-0">
+
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div id="div-escrever" class="col d-none">
+                                <div class="card bg-light p-4">
+                                    <label for="texto" class="form-label">Digite sua resposta:</label>
+                                    <textarea class="form-control" id="texto" rows="6"></textarea>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- botão de submit -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-end">
+                        <button id="questao-submit" type="submit" class="btn btn-primary btn-lg" href="">
+                            <h4>Próxima</h4>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
     <!-- JS -->
     <script src="style/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
+
 </html>
