@@ -1,121 +1,137 @@
 [
     {
+        "type": "escrever",
         "pergunta": "É preciso conhecer todas as leis?",
-        "a": "Sim",
-        "b": "Não",
-        "c": "Talvez 25%",
-        "d": "Talvez 75%"   
+        "resposta": "Só no Brasil existem dezenas de Leis, Estatutos, Códigos, Projetos de Leis, entre outras normas e regras que ditam alguns direitos e obrigações das pessoas. Fora isso, ainda existem estatutos internacionais que também valem por aqui. Normalmente, estudantes ou advogados só consultam esses textos quando precisam esclarecer alguma dúvida ou entendê-los melhor. Mas não precisa saber nada de cabeça, não!"
     },
     {
+        "type": "escrever",
         "pergunta": "Precisa ler muito?",
-        "a": "Sim",
-        "b": "Não",
-        "c": "Talvez 25%",
-        "d": "Talvez 75%"   
+        "resposta": "Sim, precisa. Em praticamente todas as matérias durante a faculdade são entregues muitos textos extras (além do próprio Vade Mecum, como dito antes) para serem estudados. E como são várias aulas, a leitura pode acabar acumulando muitas vezes se o aluno não tiver cuidado."
     },
     {
+        "type": "escrever",
         "pergunta": "Já pode advogar após formado?",
-        "a": "Sim",
-        "b": "Não",
-        "c": "Talvez 25%",
-        "d": "Talvez 75%"   
+        "resposta": "Não! Para advogar precisa passar no Exame da Ordem dos Advogados do Brasil."
     },
     {
+        "type": "escrever",
         "pergunta": "O Direito tem muitas áreas de atuação. Como vou saber qual área seguir?",
-        "a": "Sim",
-        "b": "Não",
-        "c": "Talvez 25%",
-        "d": "Talvez 75%"   
+        "resposta": "Durante o curso você irá se identificando com alguns assuntos ( componentes curriculares), caso queira entender mais sobre o assunto poderá escolher uma especialização na área escolhida." 
     },
     {
+        "type": "assinalar",
         "pergunta": "O direito positivo corresponde a:",
         "a": "Conjunto apenas de normas jurídicas vigentes em um determinado país, em um determinado tempo.",
         "b": "Um conjunto de normas e valores vigentes em um determinado país e tempo.",
         "c": "A Constituição.",
         "d": "Doutrina jurisprudência e Leis vigentes em um determinado país e em um determinado tempo.",
+        "resposta": "a",
         "ref": "https://rachacuca.com.br/quiz/156321/introducao-ao-estudo-do-direito-i/" 
     },
     {
+        "type": "assinalar",
         "pergunta": "Vacatio Legis corresponde:",
         "a": "O tempo entre a entrada da lei em vigor até a sua revogação.",
         "b": "O tempo entre a data de publicação e a revogação dessa lei.",
         "c": "O tempo entre a correção de uma lei e sua nova publicação.",
         "d": "O tempo de vigência da lei.",
         "e": "O tempo entre a publicação da lei e sua entrada em vigor.",
+        "resposta": "e",
         "ref": "https://rachacuca.com.br/quiz/156321/introducao-ao-estudo-do-direito-i/"
     },
     {
+        "type": "v-f",
         "pergunta": "Todas as pessoas tem poder sobre os Direitos Humanos. Verdadeiro ou falso?",
         "v": "Verdadeiro",
-        "f": "Falso"
+        "f": "Falso",
+        "resposta": ["v","Verdadeiro, pois todas as pessoas já nascem com seus direitos de vida, liberdade, e expressão, seja qual for sua cor, origem, religião e opção sexual."]
     },
     {
+        "type": "v-f",
         "pergunta": "Os Direitos Humanos, busca o direito a vida as liberdades básicas e a igualdade perante a lei, sempre na defesa de uma vida melhor para a humanidade.",
         "v": "Verdadeiro",
         "f": "Falso",
+        "resposta": ["v",null],
         "ref": "https://rachacuca.com.br/quiz/51855/direitos-humanos-i/"
     },
     {
+        "type": "assinalar",
         "pergunta": "No Brasil existe Pena de morte e Prisão perpétua?",
         "a": "Ambos existem e podem ser aplicados a qualquer crime.",
         "b": "Existe a prisão perpétua, mas é aplicável apenas crimes hediondos como: estupro, homicídio, sequestro entre outros...",
         "c": "Não existe pena de morte nem prisão perpétua, pois o máximo de prisão admitida no Brasil é de 30 anos.",
         "d": "É possível a pena de morte em caso de guerra declarada.",
         "e": "Ambos existem mas são aplicáveis apenas a alguns crimes.",
+        "resposta": "d",
         "ref": "https://rachacuca.com.br/quiz/86914/nocoes-de-direito-constitucional/"
     },
     {
+        "type": "assinalar",
         "pergunta": "De acordo com a Constituição Federal de 1988, são considerados cidadãos:",
         "a": "Apenas quem é brasileiro, isto é, nasceu em território nacional.",
         "b": "Aqueles que nasceram no Brasil, tem pai ou mãe brasileiros, ou também os que forem naturalizados.",
         "c": "Aqueles que nasceram no Brasil, tem pai e mãe brasileiros, ou também os que forem naturalizados",
         "d": "Aqueles que nasceram no Brasil, tem pai e mãe brasileiros, ou nasceram no estrangeiro mas falam português fluentemente.",
         "e": "Todas as pessoas do mundo que pedirem sua nacionalidade brasileira.",
+        "resposta": "b",
         "ref": "https://rachacuca.com.br/quiz/86914/nocoes-de-direito-constitucional/"
     },
     {
+        "type": "v-f",
         "pergunta": "De acordo com o preâmbulo da constituição: 'Nós, representantes do povo brasileiro, (...), promulgamos, SOB A PROTEÇÃO DE DEUS, a seguinte CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL.' Ao afirmar que estão sob a proteção de Deus, estabelece-se então o cristianismo como religião oficial do Estado. Essa premissa é:",
         "v": "Verdadeira",
         "f": "Falso",
+        "resposta": ["f","O Brasil é um Estado laico."],
         "ref": "https://rachacuca.com.br/quiz/86914/nocoes-de-direito-constitucional/"
     },
     {
+        "type": "assinalar",
         "pergunta": "É considerado 'Guardião da Constituição' o:",
         "a": "Conselho Nacional de Justiça (CNJ).",
         "b": "Organização da Nações Unidas (ONU).",
         "c": "Congresso Nacional.",
         "d": "Supremo Tribunal Federal (STF).",
         "e": "Poder executivo.",
+        "resposta": "d",
         "ref": "https://rachacuca.com.br/quiz/86914/nocoes-de-direito-constitucional/"
     },
     {
+        "type": "v-f",
         "pergunta": "O objetivo do Estatuto da Criança e do Adolescente é dar proteção integral às crianças e adolescentes e garantir seus direitos.",
         "v": "Verdadeiro",
-        "f": "Falso"
+        "f": "Falso",
+        "resposta": ["v","0"]
     },
     {
+        "type": "assinalar",
         "pergunta": "Quais são os direitos fundamentais das crianças e adolescentes?",
         "a": "Possuir aparelhos eletrônicos, como computadores e celulares.",
         "b": "Dinheiro.",
         "c": "Vida, saúde, liberdade, respeito, convivência familiar e comunitária, educação e cultura.",
         "d": "Férias, saúde, aparelhos eletrônicos e cultura.",
-        "e": "Liberdade e brinquedos."
+        "e": "Liberdade e brinquedos.",
+        "resposta": "c"
     },
     {
+        "type": "assinalar",
         "pergunta": "Em caso de maus tratos às crianças, a quem devemos comunicar?",
         "a": "Hospital mais próximo.",
         "b": "Conselho Tutelar.",
         "c": "Bombeiros.",
         "d": "Polícia Militar.",
-        "e": "Escola."
+        "e": "Escola.",
+        "resposta": "b"
     },
     {
+        "type": "assinalar",
         "pergunta": "Quais os direitos que as crianças precisam receber dos pais?",
         "a": "Brinquedos, educação e saúde.",
         "b": "Comida, lazer e brinquedos.",
         "c": "Sustento, guarda e educação.",
         "d": "Educação, roupas e quarto.",
         "e": "Saúde, amor e televisão.",
+        "resposta": "c",
         "ref": "https://rachacuca.com.br/quiz/129658/direitos-da-crianca-e-do-adolescente/"
     }
 ]

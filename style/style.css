@@ -1,0 +1,23 @@
+@import url(normalize.css);
+@import url(bootstrap/bootstrap.min.css);
+
+.espaco-g {
+    height: 18em;
+}
+
+.espaco {
+    height: 9em;
+}
+
+.espaco-p {
+    height: 4.5em;
+}
+
+.espaco-questao {
+    height: 1.25em;
+}
+
+.card {
+    border: none !important;
+    margin: 0 !important;
+}

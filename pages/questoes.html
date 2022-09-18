@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="inicio" class="">
+        <div class="espaco-g"></div>
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                    <h1>Quiz de Direito</h1>
+                    <h3>Teste seus conhecimentos, aqui!</h3>
+                </div>
+            </div>
+            <div class="espaco"></div>
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                    <form id="form-inicio">
+                        <button type="submit" class="btn btn-primary btn-lg" href="">
+                            <h1>Iniciar</h1>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- conteúdo -->
+    <div id="questoes" class="d-none">
+        <div class="espaco-p"></div>
+        <div class="container">
+            <form id="formulario">
+
+                <!-- corpo da questão -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card bg-light p-4">
+                            <h2 id="questao-numero">Questao 1</h2>
+                            <hr>
+                            <p id="questao-corpo">
+                                
+                            </p>
+                            <span id="questao-ref" class="d-none">
+                                <i class="text-muted">
+                                    Referência:
+                                    <a id="link-ref" href="" target="_blank"></a>
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="espaco-questao"></div>
+
+                <!-- alternativas da questao -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="opcoes" id="letra-a">
+                                        <label class="form-check-label" for="letra-a">
+                                            <span id="questao-alternativa-letra"><strong>Letra A:</strong></span>
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel eros
+                                                eros. Cras posuere
+                                                interdum arcu.
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="opcoes" id="letra-b">
+                                        <label class="form-check-label" for="letra-b">
+                                            <span id="questao-alternativa-letra"><strong>Letra B:</strong></span>
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel eros
+                                                eros. Cras posuere
+                                                interdum arcu.
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="opcoes" id="letra-c">
+                                        <label class="form-check-label" for="letra-c">
+                                            <span id="questao-alternativa-letra"><strong>Letra C:</strong></span>
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel eros
+                                                eros. Cras posuere
+                                                interdum arcu.
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="espaco-questao"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light p-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="opcoes" id="letra-d">
+                                        <label class="form-check-label" for="letra-d">
+                                            <span id="questao-alternativa-letra"><strong>Letra D:</strong></span>
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel eros
+                                                eros. Cras posuere
+                                                interdum arcu.
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- botão de submit -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-end">
+                        <button id="questao-submit" type="submit" class="btn btn-primary btn-lg" href="">
+                            <h4>Próxima</h4>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../style/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../index.js"></script>
+</body>
+
+</html>
