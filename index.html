@@ -9,21 +9,19 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div id="inicio" class="">
+<body id="body" style=" background-image: url(../assets/TELA_INICIO.jpg);
+                        background-repeat: no-repeat;
+                        background-size: 65%;
+                        background-position: top;
+                        background-color: #9d816b;">
+    <div id="inicio">
+        <div class="espaco-g"></div>
         <div class="espaco-g"></div>
         <div class="container">
-            <div class="row text-center justify-content-center">
-                <div class="col-md-8">
-                    <h1>Quiz de Direito</h1>
-                    <h3>Teste seus conhecimentos, aqui!</h3>
-                </div>
-            </div>
-            <div class="espaco"></div>
-            <div class="row text-center justify-content-center">
-                <div class="col-md-8">
+            <div class="row text-center">
+                <div class="col-md-6">
                     <form id="form-inicio">
-                        <button type="submit" class="btn btn-primary btn-lg" href="">
+                        <button type="submit" class="btn bg-button btn-lg" href="">
                             <h1>Iniciar</h1>
                         </button>
                     </form>
@@ -42,8 +40,6 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="card bg-light p-4">
-                            <h2 id="questao-numero">Questao 1</h2>
-                            <hr>
                             <p id="questao-corpo">
 
                             </p>
@@ -157,6 +153,41 @@
                     </div>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- lista final -->
+    <div id="lista" class="d-none">
+        <div class="espaco-p"></div>
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                    <h1>Respostas</h1>
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Resultado</th>
+                                    <th scope="col">Selecionado</th>
+                                    <th scope="col">Resposta</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="espaco-pergunta"></div>
+            <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                    <button id="refresh" type="submit" class="btn btn-primary btn-lg">
+                        <h1>Voltar para o inicio</h1>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 

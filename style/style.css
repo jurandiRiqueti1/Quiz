@@ -21,3 +21,21 @@
     border: none !important;
     margin: 0 !important;
 }
+
+/* .bg-inicio {
+    background-image: url(../assets/TELA_INICIO.jpg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top;
+    background-color: #9d816b;
+} */
+
+.bg-button {
+    background-color: #896653;
+    color: #000000;
+}
+
+.bg-button:hover{
+    background-color: #7c5d4c !important;
+    color: #000000 !important;
+}

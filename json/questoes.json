@@ -52,7 +52,7 @@
         "pergunta": "Os Direitos Humanos, busca o direito a vida as liberdades básicas e a igualdade perante a lei, sempre na defesa de uma vida melhor para a humanidade.",
         "v": "Verdadeiro",
         "f": "Falso",
-        "resposta": ["v",null],
+        "resposta": ["v","Verdadeiro"],
         "ref": "https://rachacuca.com.br/quiz/51855/direitos-humanos-i/"
     },
     {
@@ -101,7 +101,7 @@
         "pergunta": "O objetivo do Estatuto da Criança e do Adolescente é dar proteção integral às crianças e adolescentes e garantir seus direitos.",
         "v": "Verdadeiro",
         "f": "Falso",
-        "resposta": ["v","0"]
+        "resposta": ["v","Verdadeiro"]
     },
     {
         "type": "assinalar",

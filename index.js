@@ -1,9 +1,12 @@
 import teste from './json/questoes.json' assert {type: "json"}
 
 const listaFinal = {
-    questoes: [],
-    respsotas: []
+    resultado: [],
+    selecionado: [],
+    resposta: []
 }
+
+
 
 const numeroQuestao = teste.length
 let questao
@@ -43,6 +46,9 @@ const aRef = document.querySelector("#link-ref")
 
 // radio button
 const radioElement = document.getElementsByName("opcoes")
+
+// lista final
+const tbody = document.querySelector("#tbody")
 
 function questaoAleatoria(array) {
 
@@ -134,9 +140,24 @@ function referencia(questao) {
     }
 }
 
+function fazerTabela() {
+    for (let i = 0; i < listaFinal.resultado.length; i++) {
+        let tr = tbody.insertRow()
+
+        let td_resultado = tr.insertCell()
+        let td_selecionado = tr.insertCell()
+        let td_resposta = tr.insertCell()
+
+        td_resultado.innerHTML = listaFinal.resultado[i]
+        td_resposta.innerHTML = listaFinal.resposta[i]
+        td_selecionado.innerHTML = listaFinal.selecionado[i]
+    }
+}
+
 function clickInicio(event) {
     event.preventDefault()
 
+    console.log(teste.length)
     divInicio.classList.add("d-none")
     divQuestoes.classList.remove("d-none")
 
@@ -152,25 +173,46 @@ function clickQuestao(event) {
         for (let i = 0; i < radioElement.length; i++) {
             if (radioElement[i].checked) {
                 if (questao.type == "v-f") {
+                    listaFinal.selecionado.push(radioElement[i].value)
+                    listaFinal.resposta.push(questao.resposta[1])
                     if (radioElement[i].value == questao.resposta[0]) {
-                        console.log(true)
-                    }else{
-                        console.log(false)
-                    }
-                }else{
-                    if (radioElement[i].value == questao.resposta) {
-                        console.log(true)
+                        listaFinal.resultado.push("Correto")
                     } else {
-                        console.log(false)
+                        listaFinal.resultado.push("Incorreto")
+                    }
+                } else {
+                    listaFinal.selecionado.push(radioElement[i].value)
+                    listaFinal.resposta.push(questao.resposta)
+                    if (radioElement[i].value == questao.resposta) {
+                        listaFinal.resultado.push("Correto")
+                    } else {
+                        listaFinal.resultado.push("Incorreto")
                     }
                 }
             }
         }
+    }else{
+        listaFinal.selecionado.push(texto.value)
+        listaFinal.resposta.push(questao.resposta)
+        listaFinal.resultado.push("#")
     }
 
-    questaoAleatoria(teste)
+    if (teste.length > 0) {
+        console.log(teste.length)
+        questaoAleatoria(teste)
+    } else {
+        fazerTabela()
+        divLista.classList.remove("d-none")
+        divQuestoes.classList.add("d-none")
+    }
 }
 
 const inicio = document.querySelector("#form-inicio")
 
 inicio.addEventListener('submit', clickInicio)
+
+const refresh = document.querySelector("#refresh")
+
+refresh.addEventListener("click", () => {
+    location.reload()
+})
