@@ -9,22 +9,22 @@
     <title>Document</title>
 </head>
 
-<body id="body" style=" background-image: url(./assets/TELA_INICIO.jpg);
-                        background-repeat: no-repeat;
-                        background-size: 65%;
-                        background-position: top;
-                        background-color: #9d816b;">
+<body id="body" class="bg-inicio">
     <div id="inicio">
-        <div class="espaco-g"></div>
-        <div class="espaco-g"></div>
+        <div class="espaco-p"></div>
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-6">
+                <div class="col-md-5 align-self-center">
                     <form id="form-inicio">
+                        <img src="./assets/textoInicio.jpg" alt="" class="img-fluid">
                         <button type="submit" class="btn bg-button btn-lg" href="">
                             <h1>Iniciar</h1>
                         </button>
+                        <div class="espaco-questao"></div>
                     </form>
+                </div>
+                <div class="col-md-7">
+                    <img src="./assets/textoInicio2.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <!-- corpo da questão -->
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <div class="card bg-light p-4">
+                        <div class="card bg-claro p-4">
                             <p id="questao-corpo">
 
                             </p>
@@ -59,7 +59,7 @@
                     <div class="col-md-8">
                         <div class="row">
                             <div id="div-a" class="col-md-6 d-none">
-                                <div class="card bg-light p-4">
+                                <div class="card bg-claro p-4">
                                     <div class="form-check">
                                         <input value="a" class="form-check-input" type="radio" name="opcoes"
                                             id="letra-a">
@@ -74,7 +74,7 @@
                                 <div class="espaco-questao"></div>
                             </div>
                             <div id="div-b" class="col-md-6 d-none">
-                                <div class="card bg-light p-4">
+                                <div class="card bg-claro p-4">
                                     <div class="form-check">
                                         <input value="b" class="form-check-input" type="radio" name="opcoes"
                                             id="letra-b">
@@ -89,7 +89,7 @@
                                 <div class="espaco-questao"></div>
                             </div>
                             <div id="div-c" class="col-md-6 d-none">
-                                <div class="card bg-light p-4">
+                                <div class="card bg-claro p-4">
                                     <div class="form-check">
                                         <input value="c" class="form-check-input" type="radio" name="opcoes"
                                             id="letra-c">
@@ -104,7 +104,7 @@
                                 <div class="espaco-questao"></div>
                             </div>
                             <div id="div-d" class="col-md-6 d-none">
-                                <div class="card bg-light p-4">
+                                <div class="card bg-claro p-4">
                                     <div class="form-check">
                                         <input value="d" class="form-check-input" type="radio" name="opcoes"
                                             id="letra-d">
@@ -119,7 +119,7 @@
                                 <div class="espaco-questao"></div>
                             </div>
                             <div id="div-e" class="col-md-6 d-none">
-                                <div class="card bg-light p-4">
+                                <div class="card bg-claro p-4">
                                     <div class="form-check">
                                         <input value="e" class="form-check-input" type="radio" name="opcoes"
                                             id="letra-e">
@@ -134,7 +134,7 @@
                                 <div class="espaco-questao"></div>
                             </div>
                             <div id="div-escrever" class="col d-none">
-                                <div class="card bg-light p-4">
+                                <div class="card bg-claro p-4">
                                     <label for="texto" class="form-label">Digite sua resposta:</label>
                                     <textarea class="form-control" id="texto" rows="6"></textarea>
                                 </div>
@@ -147,12 +147,18 @@
                 <!-- botão de submit -->
                 <div class="row justify-content-center">
                     <div class="col-md-8 text-end">
-                        <button id="questao-submit" type="submit" class="btn btn-primary btn-lg" href="">
+                        <button id="questao-submit" type="submit" class="btn bg-button btn-lg" href="">
                             <h4>Próxima</h4>
                         </button>
                     </div>
                 </div>
             </form>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img id="imgFundo" src="" alt="" class="img-fluid">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -161,33 +167,36 @@
         <div class="espaco-p"></div>
         <div class="container">
             <div class="row text-center justify-content-center">
-                <div class="col-md-8">
-                    <h1>Respostas</h1>
-                    <hr>
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Resultado</th>
-                                    <th scope="col">Selecionado</th>
-                                    <th scope="col">Resposta</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody">
-
-                            </tbody>
-                        </table>
+                <div class="col-md-10">
+                    <div class="card bg-claro p-4">
+                        <h1>Respostas</h1>
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Resultado</th>
+                                        <th scope="col">Selecionado</th>
+                                        <th scope="col">Resposta</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+    
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="espaco-pergunta"></div>
+            <div class="espaco-questao"></div>
             <div class="row text-center justify-content-center">
                 <div class="col-md-8">
-                    <button id="refresh" type="submit" class="btn btn-primary btn-lg">
-                        <h1>Voltar para o inicio</h1>
+                    <button id="refresh" type="submit" class="btn bg-button btn-lg">
+                        <h2>Voltar para o inicio</h2>
                     </button>
                 </div>
             </div>
+            <div class="espaco-g"></div>
         </div>
     </div>
 

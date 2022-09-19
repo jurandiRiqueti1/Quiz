@@ -22,13 +22,17 @@
     margin: 0 !important;
 }
 
-/* .bg-inicio {
-    background-image: url(../assets/TELA_INICIO.jpg);
+.bg-claro{
+    background-color: #d4c8ad;
+}
+
+.bg-inicio {
+    /* background-image: url(../assets/TELA_INICIO.jpg);
     background-repeat: no-repeat;
     background-size: 65%;
-    background-position: top;
+    background-position: top; */
     background-color: #9d816b;
-} */
+}
 
 .bg-button {
     background-color: #896653;

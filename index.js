@@ -1,12 +1,11 @@
 import teste from './json/questoes.json' assert {type: "json"}
+import imagens from './json/img.json' assert {type: "json"}
 
 const listaFinal = {
     resultado: [],
     selecionado: [],
     resposta: []
 }
-
-
 
 const numeroQuestao = teste.length
 let questao
@@ -50,9 +49,14 @@ const radioElement = document.getElementsByName("opcoes")
 // lista final
 const tbody = document.querySelector("#tbody")
 
+const imgFundo = document.querySelector("#imgFundo")
+
 function questaoAleatoria(array) {
 
     const index = Math.floor(Math.random() * array.length)
+    const indexImg = Math.floor(Math.random() * imagens.length)
+
+    imgFundo.src = imagens[indexImg]
 
     questao = array.splice(index, 1)[0]
 
