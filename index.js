@@ -1,3 +1,5 @@
+// Alunos: Jurandi Riqueti Junior e Arthur David Calminati
+
 import teste from './json/questoes.json' assert {type: "json"}
 import imagens from './json/img.json' assert {type: "json"}
 
