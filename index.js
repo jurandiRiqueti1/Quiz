@@ -203,7 +203,7 @@ function clickQuestao(event) {
         listaFinal.resultado.push("#")
     }
 
-    if (teste.length > 0) {
+    if (teste.length > 8) {
         console.log(teste.length)
         questaoAleatoria(teste)
     } else {
